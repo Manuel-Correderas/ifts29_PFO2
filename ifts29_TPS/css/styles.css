@@ -1,0 +1,191 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  margin: 0;
+  padding: 10px;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#sobre-mi {
+  padding: 20px;
+  text-align: center;
+}
+#sobre-mi img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.tarjeta {
+  background-color: #eaeaea;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#habilidades {
+  padding: 20px;
+}
+#habilidades ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#habilidades ul li {
+  background-color: #ddd;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+#contacto {
+  padding: 20px;
+  text-align: center;
+}
+#contacto form {
+  display: inline-block;
+  text-align: left;
+}
+#contacto form label {
+  display: block;
+  margin-top: 10px;
+}
+#contacto form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+#contacto form button {
+  margin-top: 15px;
+}
+
+#peliculas {
+  padding: 20px;
+  text-align: center;
+}
+#peliculas .pelicula {
+  margin: 15px auto;
+  width: 80%;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+#peliculas .pelicula img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para todos los botones */
+button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #005bb5;
+}
+/* Tipografía especial para los títulos */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Tamaños y pesos visuales */
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.redes {
+  border-radius: 50%; /* Círculo perfecto */
+  transition: transform 0.3s ease;
+}
+
+.redes:hover {
+  transform: scale(1.1); /* Animación suave al pasar el mouse */
+}
+
+.boton-enviar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.boton-enviar button {
+  background-color: #444; /* Gris oscuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar button:hover {
+  background-color: #222; /* Un gris aún más oscuro al pasar el mouse */
+}
