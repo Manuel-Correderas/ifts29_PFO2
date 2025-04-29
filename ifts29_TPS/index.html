@@ -24,10 +24,20 @@
   <nav>
     <ul>
       <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#tarjetas">Proyectos</a></li>
+      <li class="menu-proyectos">
+        <a href="#tarjetas">Proyectos</a>
+        <ul class="submenu">
+          <li><a href="#proyecto1">Alquilarte</a></li><br>
+          <li><a href="#proyecto2">Salud Viandah</a></li>
+        </ul>
+      </li>
+      <li><a href="#peliculas">Películas</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
+  
+  
+  
 
   <main>
     <section id="sobre-mi">
@@ -40,12 +50,13 @@
     <section id="tarjetas">
       <h2>Proyectos</h2>
       <div class="tarjetas-container">
-        <div class="tarjeta">
+        <div id="proyecto1" class="tarjeta">
           <img src="img/proyecto1.jpg" alt="Proyecto 1" />
           <h3>ALQUILARTE</h3>
           <p>Alquilarte es una solución digital integral para la administración de alquileres en el sector inmobiliario. Su objetivo es automatizar procesos críticos como el registro de propiedades, inquilinos, contratos y pagos, facilitando la generación de reportes contables y financieros en tiempo real. Además, incorpora alertas para vencimientos, coordinación de visitas y tareas de mantenimiento, e integración con sistemas contables, lo que permite mejorar la eficiencia y reducir errores en la gestión diaria de la empresa.</p>
+          <a href="alquilarte.html" class="btn btn-primary mt-3">Ver más ➔</a>
         </div>
-        <div class="tarjeta">
+        <div id="proyecto2" class="tarjeta">
           <img src="img/proyecto2.jpg" alt="Proyecto 2" />
           <h3>Salud Viandah</h3>
           <p>Salud Viandah es una propuesta gastronómica centrada en la alimentación saludable, rica y accesible. Ofrecemos viandas nutritivas, equilibradas y visualmente apetitosas, elaboradas con ingredientes frescos y de alta calidad. Nuestro objetivo es facilitar una alimentación consciente, sin sacrificar el sabor ni el placer de comer bien.
@@ -53,7 +64,9 @@
             A través de un menú variado que incluye opciones vegetarianas, veganas, keto, y con proteínas animales, buscamos adaptarnos a las distintas necesidades nutricionales y estilos de vida. Cada plato está diseñado por profesionales, para garantizar el aporte adecuado de nutrientes y apoyar una vida activa y saludable.
             
             Contamos con un sistema de pedidos online, promociones semanales, y una red de distribución eficiente que lleva nuestros platos directamente a la puerta de nuestros clientes. Además, promovemos la educación alimentaria, el consumo responsable, y una relación más saludable con la comida.</p>
+            <a href="https://salud-viandah2.netlify.app/" class="btn btn-primary mt-3">Ver más ➔</a>
         </div>
+          
       </div>
       
     </section>
@@ -82,22 +95,32 @@
     
     <section id="contacto">
       <h2>Contacto</h2>
-      <form action="https://formsubmit.co/manugonzo1111@gmail.com" method="post">
+    
+      <!-- Botón para mostrar/ocultar -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <button id="toggle-form">📝 Mostrar/Ocultar Formulario</button>
+      </div>
+    
+      <!-- Formulario -->
+      <form action="https://formsubmit.co/manugonzo1111@gmail.com" method="post" id="formulario-contacto">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
+    
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" required />
+    
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
+    
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" name="telefono" />
+    
         <div class="boton-enviar">
           <button type="submit">📨 Enviar</button>
         </div>
-        
       </form>
-      
     </section>
+    
     
     <!-- POSIBLE MEJORA 4 añadiendo carrusel -->
     <section id="peliculas">
@@ -154,5 +177,16 @@
       el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
     }
   </script>
+  <!-- Botones funcionales -->
+<div style="text-align: center;">
+  <button id="toggle-mode">🌙 Cambiar Modo Claro/Oscuro</button>
+</div>
+
+<!-- Contador de visitas -->
+<p id="visit-count" style="text-align: center; margin-top: 20px;"></p>
+
+<!-- Script externo -->
+<script src="js/scripts.js"></script>
+
 </body>
 </html>

@@ -1,47 +1,117 @@
-Checklist - Práctica Formativa Obligatoria 1
-• Estructura del Proyecto:
-[ ] Archivo "index.html" ubicado en la raíz.
-[ ] Carpeta "css" que contenga el archivo "styles.css".
-[ ] (Opcional) Carpeta "img" para recursos gráficos.
-[ ] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
-• Repositorio y Publicación:
-[ ] Repositorio en GitHub creado.
-[ ] Proyecto subido al repositorio.
-[ ] Proyecto publicado utilizando GitHub Pages.
-[ ] En el "README.md" se indica la URL de GitHub Pages.
-• Uso de Google Fonts:
-[ ] Enlace a Google Fonts incluido en la sección "head" del HTML.
-[ ] La tipografía importada se aplica en el sitio.
-[ ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?
-Respuesta: Me parece que la fuente es una fuente de aspecto claro y formal para el propósito de un Portfolio.
-• HTML:
-[ ] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
-[ ] Se han incluido las metaetiquetas obligatorias: charset y viewport.
-[ ] Se ha definido un título descriptivo.
-[ ] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
-Secciones obligatorias en "main":
-[ ] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
-[ ] Se han insertado al menos 4 comentarios explicativos en el código HTML.
-• CSS:
-[ ] Existe el archivo "styles.css" con estilos personalizados.
-[ ] Se utilizan selectores basados en clases e identificadores.
-[ ] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos.
-Layout y Organización:
-[ ] Se ha organizado el layout (especialmente en la sección "tarjetas") utilizando Flexbox o Grid.
-[ ] Redacta: ¿Qué ventajas encontraste al utilizar Flexbox o Grid en tu proyecto?
-Respuesta: Flexbox facilita la alineación en fila o columna y permite un diseño responsivo. En mi proyecto, lo usé para que las tarjetas se adapten a distintos tamaños de pantalla sin complicaciones.
-Estilización de Componentes:
-[ ] Se han personalizado los estilos de tablas, botones, enlaces y formularios.
-[ ] Se han ajustado las dimensiones de imágenes y contenedores utilizando unidades relativas (%,
-rem, vh).
-[ ] Se ha implementado al menos una animación o transición (por ejemplo, efecto hover en
-tarjetas o botones).
-[ ] Redacta: ¿Qué animación o transición implementaste y por qué consideraste que era
-adecuada para tu proyecto?
-Respuesta: Al hacer hover sobre las tarjetas, se escalan ligeramente. Esto mejora la interactividad y le da un estilo moderno al diseño.
-• Consideraciones Adicionales:
-[ ] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
-[ ] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en
-las imágenes).
-[ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de
-implementación.
+## Portfolio Personal - PFO2
+
+¡Hola! 
+Soy Manuel Correderas y este es mi portfolio web desarrollado para la Práctica Formativa Obligatoria 2 (PFO2).
+
+Este proyecto es una evolución del trabajo realizado en la PFO1, incorporando mejoras visuales, estructurales y técnicas para lograr un diseño más atractivo, moderno y profesional.
+
+---
+
+## Estructura del Proyecto
+
+- `index.html` ➔ Página principal de mi portfolio.
+- `alquilarte.html` ➔ Proyecto "Alquilarte" (sección en construcción).
+- Carpeta `css/` ➔ Archivo `styles.css` con todos los estilos personalizados.
+- Carpeta `img/` ➔ Recursos gráficos (perfil, proyectos, películas, etc.).
+- Carpeta `js/` ➔ Archivo `scripts.js` para interactividad.
+- Archivo `README.md` ➔ Descripción del proyecto.
+
+---
+
+## Funcionalidades Incorporadas
+
+- **Diseño responsivo** adaptado a distintos tamaños de pantalla.
+- **Modo Claro/Oscuro** con transición suave.
+- **Submenú desplegable** en la sección de "Proyectos".
+- **Efectos de hover** en botones, tarjetas y enlaces.
+- **Degradados** en fondo, header, footer, botones y tarjetas.
+- **Animaciones suaves** en tarjetas y botones.
+- **Contador de visitas** usando `localStorage`.
+- **Formulario de contacto** que puede ocultarse/mostrarse.
+- **Separación de secciones**: Sobre mí, Proyectos, Habilidades, Películas, Contacto.
+
+---
+
+## Mejoras Visuales
+
+- Incorporé **degradados** en el fondo, el encabezado, las tarjetas, el footer y los botones para un estilo más moderno.
+- Implementé **sombra** (`box-shadow`) en elementos principales como header, tarjetas y películas para dar profundidad visual.
+- Mejoré la **estética de los botones**, haciéndolos más redondeados y con animaciones de escala al pasar el mouse.
+- Utilicé **Google Fonts**: `Roboto` para el texto general y `Playfair Display` para los encabezados.
+
+---
+
+## Tecnologías Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5** (solo en `alquilarte.html`)
+- **JavaScript básico**
+- **Git** y **GitHub**
+
+---
+
+## Publicación
+
+El sitio está publicado en **GitHub Pages**.  
+🔗 [Acceder al Portfolio aquí](https://manuel-correderas.github.io/iftsPFO2/)
+
+---
+
+## Decisiones de Diseño
+
+- **Fuente:** Elegí `Roboto` por su claridad para el contenido y `Playfair Display` para títulos porque aporta un toque elegante.
+- **Layout:** Usé **Flexbox** para lograr un diseño adaptable y centrado.
+- **Modo Oscuro:** Priorizo la comodidad visual, sobre todo para usuarios en horarios nocturnos.
+- **Submenú en Proyectos:** Permite una mejor organización del contenido y facilita expasión.
+- **Secciones como "Películas" y "Alquilarte"**: Mejoran el dianmismo.
+
+---
+
+## Checklist de Requisitos
+
+- [x] Archivo `index.html` en la raíz.
+- [x] Carpeta `css/` con `styles.css`.
+- [x] Carpeta `img/` con imágenes organizadas.
+- [x] Archivo `README.md` detallado.
+- [x] Proyecto subido y publicado en GitHub Pages.
+- [x] Enlace a Google Fonts incluido.
+- [x] Uso de Flexbox para tarjetas y habilidades.
+- [x] Implementación de botones personalizados y efectos de hover.
+- [x] Diseño 100% responsivo.
+- [x] Aplicación de buenas prácticas de accesibilidad (atributos `alt` en imágenes).
+
+---
+
+
+## Mejoras Personales Incorporadas
+
+- Creé una nueva página `alquilarte.html` en construcción.
+- Agregué degradados, transiciones y sombras a todo el proyecto.
+- Mejoré la experiencia de usuario al integrar interactividad.
+- Mejoré la estructura del código CSS para mayor legibilidad y mantenimiento.
+
+---
+
+## Comentario Final
+
+Estoy muy conforme con el resultado de esta segunda práctica.  
+El proyecto no solo cumple los requisitos, sino que refleja mi compromiso de seguir aprendiendo y mejorando en cada entrega.
+
+¡Gracias por visitar mi Portfolio!
+
+## PROYECTO ANTES
+
+![Imagen 1] (img\PFO1(1).jpg)
+![Imagen 2] (img\PFO1(2).jpg)
+![Imagen 3] (img\PFO1(3).jpg)
+![Imagen 4] (img\PFO1(4).jpg)
+
+## PROYECTO ANTES
+
+![Imagen 1] (img\PFO2(1).jpg)
+![Imagen 2] (img\PFO2(2).jpg)
+![Imagen 3] (img\PFO2(3).jpg)
+![Imagen 4] (img\PFO2(4).jpg)
+
+

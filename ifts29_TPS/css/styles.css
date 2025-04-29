@@ -1,67 +1,128 @@
+/* General */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+  min-height: 100vh;
 }
 
+/* Header */
 header {
-  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #0066cc, #003366);
   padding: 20px;
   text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
+/* Nav */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #333;
+  background: linear-gradient(90deg, #333, #555);
   margin: 0;
   padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
+
 nav ul li {
   margin: 0 15px;
+  position: relative;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
 }
 
+nav ul li a:hover {
+  background-color: #555;
+  color: #ffcc00;
+  border-radius: 5px;
+}
+
+/* Submenú */
+.menu-proyectos .submenu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+}
+
+.menu-proyectos:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.submenu li a:hover {
+  background-color: #555;
+}
+
+/* Sobre mí */
 #sobre-mi {
   padding: 20px;
   text-align: center;
 }
+
 #sobre-mi img {
   width: 150px;
   height: auto;
   border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Tarjetas */
 .tarjetas-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
 }
+
 .tarjeta {
-  background-color: #eaeaea;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
   width: 300px;
   margin: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .tarjeta:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
+
 .tarjeta img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
+/* Habilidades */
 #habilidades {
   padding: 20px;
 }
+
 #habilidades ul {
   list-style: none;
   padding: 0;
@@ -69,75 +130,92 @@ nav ul li a {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 #habilidades ul li {
   background-color: #ddd;
   margin: 5px;
   padding: 10px 15px;
   border-radius: 20px;
+  color: #222;
 }
 
+/* Contacto */
 #contacto {
   padding: 20px;
   text-align: center;
 }
+
 #contacto form {
   display: inline-block;
   text-align: left;
+  transition: all 0.5s ease;
 }
+
 #contacto form label {
   display: block;
   margin-top: 10px;
 }
+
 #contacto form input {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
   box-sizing: border-box;
 }
+
 #contacto form button {
   margin-top: 15px;
 }
 
+/* Películas */
 #peliculas {
   padding: 20px;
   text-align: center;
 }
+
 #peliculas .pelicula {
   margin: 15px auto;
   width: 80%;
   max-width: 500px;
-  background-color: #f9f9f9;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
+  color: #222;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 #peliculas .pelicula img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
+/* Footer */
 footer {
-  background-color: #333;
+  background: linear-gradient(90deg, #333, #555);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 
-/* Estilo para todos los botones */
-button {
+/* Botones */
+button, .btn {
   padding: 10px 20px;
-  background-color: #0066cc;
+  background: linear-gradient(to right, #0066cc, #003366);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   margin: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s, transform 0.3s;
 }
-button:hover {
-  background-color: #005bb5;
+
+button:hover, .btn:hover {
+  background: linear-gradient(to right, #005bb5, #002244);
+  transform: scale(1.05);
 }
-/* Tipografía especial para los títulos */
+
+/* Tipografía */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -145,7 +223,6 @@ h1, h2, h3 {
   color: #222;
 }
 
-/* Tamaños y pesos visuales */
 h1 {
   font-size: 3em;
   font-weight: 800;
@@ -160,15 +237,18 @@ h3 {
   font-size: 1.5em;
   font-weight: 600;
 }
+
+/* Redes Sociales */
 .redes {
-  border-radius: 50%; /* Círculo perfecto */
+  border-radius: 50%;
   transition: transform 0.3s ease;
 }
 
 .redes:hover {
-  transform: scale(1.1); /* Animación suave al pasar el mouse */
+  transform: scale(1.1);
 }
 
+/* Botón formulario especial */
 .boton-enviar {
   display: flex;
   justify-content: center;
@@ -176,16 +256,76 @@ h3 {
 }
 
 .boton-enviar button {
-  background-color: #444; /* Gris oscuro */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background: linear-gradient(to right, #444, #222);
 }
 
-.boton-enviar button:hover {
-  background-color: #222; /* Un gris aún más oscuro al pasar el mouse */
+/* 🔥 MODO OSCURO 🔥 */
+body.dark-mode {
+  background: linear-gradient(to bottom right, #1a1a1a, #2c2c2c);
+  color: #e0e0e0;
+}
+
+body.dark-mode nav, 
+body.dark-mode footer {
+  background: linear-gradient(90deg, #222, #444);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #e0e0e0;
+}
+
+body.dark-mode li,
+body.dark-mode a,
+body.dark-mode label,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode p {
+  color: #e0e0e0;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+body.dark-mode .tarjeta {
+  background: linear-gradient(to bottom, #2c2c2c, #3a3a3a);
+}
+
+body.dark-mode .pelicula {
+  background: linear-gradient(to bottom, #2c2c2c, #3a3a3a);
+}
+
+body.dark-mode #habilidades ul li {
+  background-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn,
+body.dark-mode button {
+  background: linear-gradient(to right, #555, #222);
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode button:hover {
+  background: linear-gradient(to right, #666, #333);
+}
+
+/* Responsive Menu - Solo mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .menu-proyectos .submenu {
+    position: static;
+    background-color: #444;
+  }
 }
