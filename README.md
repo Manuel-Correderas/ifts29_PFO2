@@ -54,7 +54,7 @@ Este proyecto es una evolución del trabajo realizado en la PFO1, incorporando m
 ## Publicación
 
 El sitio está publicado en **GitHub Pages**.  
-🔗 [Acceder al Portfolio aquí](https://manuel-correderas.github.io/iftsPFO2)
+🔗 [Acceder al Portfolio aquí](https://manuel-correderas.github.io/ifts_PFO2)
 
 ---
 
