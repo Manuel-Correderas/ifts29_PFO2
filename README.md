@@ -108,8 +108,6 @@ El proyecto no solo cumple los requisitos, sino que refleja mi compromiso de seg
 ## PROYECTO DESPUÉS
 
 ![Imagen 1](ifts29_TPS/img/PFO2(1).jpg) ![Imagen 2](ifts29_TPS/img/PFO2(2).jpg) ![Imagen 3](ifts29_TPS/img/PFO2(3).jpg) ![Imagen 4](ifts29_TPS/img/PFO2(4).jpg)
-=======
-![Imagen 1](ifts29_TPS/img/PFO1(1).jpg) ![Imagen 2](ifts29_TPS/img/PFO1(2).jpg) ![Imagen 3](ifts29_TPS/img/PFO1(3).jpg) ![Imagen 4](ifts29_TPS/img/PFO1(4).jpg)
 
 
 
